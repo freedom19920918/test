@@ -13,7 +13,7 @@ import Main from './pages/main/Main';
 Loadable的两个配置项loader和loading的值必须是函数
 */
 
-const Loding = ()=><div>加载中...</div>;//函数组件
+const Loding = ()=><div>加载中...</div>;//函数组件ccccccc
 const Login = Loadable({
   loader: () => import(/*webpackChunkName:'login'*/'./pages/Login'),
   loading:Loding

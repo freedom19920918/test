@@ -23,6 +23,12 @@ const Reg = Loadable({
   loading:Loding
 });
 
+const Forgot = Loadable({
+  loader: () => import(/*webpackChunkName:'forgot'*/'./pages/Forgot'),
+  loading:Loding
+});
+
+
 class App extends React.Component{
   render(){
     return(
@@ -31,6 +37,7 @@ class App extends React.Component{
           <Route path="/" exact component={Main}/>
           <Route path="/login" component={Login}/>
           <Route path="/reg" component={Reg}/>
+          <Route path="/forgot" component={Forgot}/>
         </Switch>
       </HashRouter>
     )

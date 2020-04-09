@@ -16,7 +16,6 @@ export default class Main extends Component {
                 { id: 3, title: '我的', icon: "my" },
             ],
             selectedTab: 0,
-
         };
     }
     renderContent(id) {
@@ -53,14 +52,14 @@ export default class Main extends Component {
                                     icon={<div style={{
                                         width: '22px',
                                         height: '22px',
-                                        background: `url(${require('../../assets/imgs/' + item.icon + '.png')}) center center /  30px 30px no-repeat`
+                                        background: `url(${require('../../assets/imgs/' + item.icon + '.png')}) center center /  cover no-repeat`
                                     }}
                                     />
                                     }
                                     selectedIcon={<div style={{
                                         width: '22px',
                                         height: '22px',
-                                        background: `url(${require('../../assets/imgs/' + item.icon + '_s.png')}) center center /  30px 30px no-repeat`
+                                        background: `url(${require('../../assets/imgs/' + item.icon + '_s.png')}) center center / cover no-repeat`
                                     }}
                                     />
                                     }

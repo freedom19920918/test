@@ -11,6 +11,12 @@ axios.defaults.baseURL = `http://localhost:8000`;
 // export const loginApi = (params)=> axios.post(`/login`,qs.stringify(params))//拦截器里面已经处理了参数
 export const loginApi = (params)=> axios.post(`/login`,params)
 
+
+/* 
+获取房产列表
+*/
+export const getHouseListApi = ()=>axios.get(`/getHouseList`)
+
 // loginApi()
 // .then()
 // .catch()
